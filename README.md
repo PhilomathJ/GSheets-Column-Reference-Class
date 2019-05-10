@@ -16,6 +16,11 @@ Object/class utility usable by GAS projects that allows creation of objects at t
 * **FindColumnHeader(string)**  Initiates a ColumnReference object on the column with the given header value. Searches across the top row for the given header value than instantiates a new ColumnRefrence object with that Index and Letter
 * **Autofit**  Resizes the column based on the widest data row
 * **Find(string)**  Returns the row number of the cell with the given value
+* **Formatting (sub-class)**  General formating methods that affect the entire column
+ * *Comma*  Formats column as number with thousands separator
+   *NoDecimals*  Formats column as number with no decmial places
+   *ShortDate*  Formats column as short date (mm/dd/yyyy)
+   *LongDate*  Formats columns as full date with spelled out names and timestamp
 
 ##Known Limitations
 * Will need some additional error/boundary checking
@@ -25,3 +30,4 @@ Object/class utility usable by GAS projects that allows creation of objects at t
   * *ColumnAbsolute*  Only the column has the dollar sign (R$C)
   * *RowAbsolute*  Only the row has the dollar sign ($RC)
   * *Absolute* Both row and oclumn have dollar sign ($R$C)
+  * Additional formatting options
