@@ -1,3 +1,4 @@
+// Main object declaration
 var Polygon = function(height, width){
   this.height = height;
   this.width = width;
@@ -16,5 +17,4 @@ function testPoly(){
   Logger.log(poly2); */
   poly1.logDimension();
   poly2.logDimension();
-  
 }

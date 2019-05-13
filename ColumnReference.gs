@@ -1,5 +1,6 @@
 var LETTERS = /^[a-zA-Z]+$/;    // All alphabetic letters only
 
+// Main object declaration
 var ColumnReference = function(){
   this._index = 0;
   this._letter = '';
@@ -16,7 +17,6 @@ var ColumnReference = function(){
       this._letter = columnToLetter(index);
     }
   }
-  
   
   this.GetLetter = function() {
     return this._letter;
